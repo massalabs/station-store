@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Node manager plugin",
+        "description": "Plugin description",
+        "pluginFiles": {
+            "windows": {
+                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.5/thyra-plugin-node-manager_windows-amd64.zip",
+                "checksum": "08d212b18e35ad6c82ce8b8d18bba6d4"
+            },
+            "linux": {
+                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.5/thyra-plugin-node-manager_linux-amd64.zip",
+                "checksum": "ebdf288e60bbbce2f24832c8463b0b4b"
+            },
+            "macos-arm64": {
+                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.5/thyra-plugin-node-manager_darwin-arm64.zip",
+                "checksum": "45dfb5c5b9886210caf6256d734260e9"
+            },
+            "macos-amd64": {
+                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.5/thyra-plugin-node-manager_darwin-amd64.zip",
+                "checksum": "e5eac42432c6d2462a74f3e81ca091fd"
+            }
+        },
+        "version": "0.0.5",
+        "url": "https://github.com/massalabs/thyra-node-manager-plugin"
+      }
+]
