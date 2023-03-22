@@ -9,7 +9,7 @@ Edit the `plugins.json` file to add your plugin information folowing the templat
    {
     "name": "Plugin name",
     "description": "Plugin description",
-    "pluginFiles": {
+    "assets": {
         "windows": {
             "url": "Plugin zip url for window",
             "checksum": "zip file md5sum"
