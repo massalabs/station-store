@@ -1,7 +1,7 @@
 [
     {
         "name": "Node manager plugin",
-        "description": "Plugin description",
+        "description": "Install and manage Massa nodes from Thyra",
         "pluginFiles": {
             "windows": {
                 "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.5/thyra-plugin-node-manager_windows-amd64.zip",
