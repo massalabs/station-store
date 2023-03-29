@@ -1,6 +1,6 @@
 [
     {
-        "name": "Node manager plugin",
+        "name": "Node Manager",
         "description": "Install and manage Massa nodes from Thyra",
         "assets": {
             "windows": {
