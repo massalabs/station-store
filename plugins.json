@@ -4,23 +4,23 @@
         "description": "Install and manage Massa nodes from Thyra",
         "assets": {
             "windows": {
-                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.6/thyra-plugin-node-manager_windows-amd64.zip",
-                "checksum": "25ab38782155750865e5609322e298a7"
+                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.7/thyra-plugin-node-manager_windows-amd64.zip",
+                "checksum": "238943d131f90366ed51ea26bec3332d"
             },
             "linux": {
-                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.6/thyra-plugin-node-manager_linux-amd64.zip",
-                "checksum": "79fb0f802cc026188c148e7c2bf5abb1"
+                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.7/thyra-plugin-node-manager_linux-amd64.zip",
+                "checksum": "a91e11bccc9874a79f4e453e29b33753"
             },
             "macos-arm64": {
-                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.6/thyra-plugin-node-manager_darwin-arm64.zip",
-                "checksum": "dca17432383790261e6da962af94a43c"
+                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.7/thyra-plugin-node-manager_darwin-arm64.zip",
+                "checksum": "9ba5f7b9c1947443c391390aba23847c"
             },
             "macos-amd64": {
-                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.6/thyra-plugin-node-manager_darwin-amd64.zip",
-                "checksum": "577f77b433d627c2b93ff789b1b1685d"
+                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.7/thyra-plugin-node-manager_darwin-amd64.zip",
+                "checksum": "99c65050f31550dba61e364796008aa3"
             }
         },
-        "version": "0.0.6",
+        "version": "0.0.7",
         "url": "https://github.com/massalabs/thyra-node-manager-plugin"
       }
 ]
