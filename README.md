@@ -8,8 +8,8 @@ Edit the `plugins.json` file to add your plugin information folowing the templat
 ```json
    {
   "name": "Plugin name",
-  "description": "Plugin description",
-  "logo": "Plugin logo url",
+  "description": "Plugin description - 80 characters",
+  "logo": "Plugin logo url - 32 pixels",
   "repository": "Plugin github repo url",
   "assets": {
     "windows": {
@@ -32,7 +32,7 @@ Edit the `plugins.json` file to add your plugin information folowing the templat
   "version": "6.6.6",
   "url": "plugin github repo url",
   "advanced": {
-    "longDescription": "Plugin long description",
+    "longDescription": "Plugin long description - 230 characters",
     "screenshots": ["Plugin screenshot urls"],
     "size": "Plugin size",
     "Language": ["Plugin languages"],
