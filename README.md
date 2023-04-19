@@ -7,7 +7,7 @@ Edit the `plugins.json` file to add your plugin information folowing the templat
 
 ```json
    {
-  "name": "Plugin name",
+  "name": "Plugin name - 30 characters",
   "description": "Plugin description - 80 characters",
   "logo": "Plugin logo url - 40 pixels",
   "assets": {
