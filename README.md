@@ -9,7 +9,7 @@ Edit the `plugins.json` file to add your plugin information folowing the templat
    {
   "name": "Plugin name",
   "description": "Plugin description - 80 characters",
-  "logo": "Plugin logo url - 32 pixels",
+  "logo": "Plugin logo url - 40 pixels",
   "repository": "Plugin github repo url",
   "assets": {
     "windows": {
