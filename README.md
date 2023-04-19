@@ -10,7 +10,6 @@ Edit the `plugins.json` file to add your plugin information folowing the templat
   "name": "Plugin name",
   "description": "Plugin description - 80 characters",
   "logo": "Plugin logo url - 40 pixels",
-  "repository": "Plugin github repo url",
   "assets": {
     "windows": {
       "url": "Plugin zip url for window",
@@ -31,13 +30,6 @@ Edit the `plugins.json` file to add your plugin information folowing the templat
   },
   "version": "6.6.6",
   "url": "plugin github repo url",
-  "advanced": {
-    "longDescription": "Plugin long description - 230 characters",
-    "screenshots": ["Plugin screenshot urls"],
-    "size": "Plugin size",
-    "Language": ["Plugin languages"],
-    "Categories": ["Plugin categories"]
-  }
 },
 ```
 
