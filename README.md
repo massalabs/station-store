@@ -7,29 +7,30 @@ Edit the `plugins.json` file to add your plugin information folowing the templat
 
 ```json
    {
-    "name": "Plugin name",
-    "description": "Plugin description",
-    "assets": {
-        "windows": {
-            "url": "Plugin zip url for window",
-            "checksum": "zip file md5sum"
-        },
-        "linux": {
-            "url": "Plugin zip url for linux",
-            "checksum": "zip file md5sum"
-        },
-        "macos-arm64": {
-            "url": "Plugin zip url for macOs darwin arm64",
-            "checksum": "zip file md5sum"
-        },
-        "macos-amd64": {
-            "url": "Plugin zip url for macOs darwin amd64",
-            "checksum": "zip file md5sum"
-        }
+  "name": "Plugin name - 30 characters",
+  "description": "Plugin description - 80 characters",
+  "logo": "Plugin logo url - 40 pixels",
+  "assets": {
+    "windows": {
+      "url": "Plugin zip url for window",
+      "checksum": "zip file md5sum"
     },
-    "version": "6.6.6",
-    "url": "plugin github repo url"
+    "linux": {
+      "url": "Plugin zip url for linux",
+      "checksum": "zip file md5sum"
+    },
+    "macos-arm64": {
+      "url": "Plugin zip url for macOs darwin arm64",
+      "checksum": "zip file md5sum"
+    },
+    "macos-amd64": {
+      "url": "Plugin zip url for macOs darwin amd64",
+      "checksum": "zip file md5sum"
+    }
   },
+  "version": "6.6.6",
+  "url": "plugin github repo url",
+},
 ```
 
 Make a pull request to submit your contribution to the MassaLabs team approval.
