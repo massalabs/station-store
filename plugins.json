@@ -1,26 +1,28 @@
 [
-    {
-        "name": "Node Manager",
-        "description": "Install and manage Massa nodes from Thyra",
-        "assets": {
-            "windows": {
-                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.8/thyra-plugin-node-manager_windows-amd64.zip",
-                "checksum": "02ee5479b18149300815af3ec1b0f6ac"
-            },
-            "linux": {
-                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.8/thyra-plugin-node-manager_linux-amd64.zip",
-                "checksum": "4b7ba25d612ea41066a8cc679420a60d"
-            },
-            "macos-arm64": {
-                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.8/thyra-plugin-node-manager_darwin-arm64.zip",
-                "checksum": "3feb252f7a57e8a393d5ccfc1604f2ea"
-            },
-            "macos-amd64": {
-                "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.8/thyra-plugin-node-manager_darwin-amd64.zip",
-                "checksum": "247655ea2985c488c678e195699684d7"
-            }
-        },
-        "version": "0.0.8",
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin"
+    
+{
+    "name": "Node Manager",
+    "logo": "logo.svg",
+    "description": "Install and manage Massa nodes from Thyra",
+    "assets": {
+      "windows": {
+        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_windows-amd64.zip",
+        "checksum": "877c15e37ee4b9a6880467a0e5233212"
+      },
+      "linux": {
+        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_linux-amd64.zip",
+        "checksum": "e182d77e6773b8e5745dfaf29e56ee55"
+      },
+      "macos-arm64": {
+        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_darwin-arm64.zip",
+        "checksum": "421f7b27ff1bede9997cd39e086567d8"
+      },
+      "macos-amd64": {
+        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_darwin-amd64.zip",
+        "checksum": "a179319ee6d8e5caae3f945989a8135a"
       }
+    },
+    "version": "0.0.10",
+    "url": "https://github.com/massalabs/thyra-node-manager-plugin"
+  }
 ]
