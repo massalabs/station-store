@@ -2,7 +2,7 @@
   {
     "name": "Node Manager",
     "logo": "logo.svg",
-    "description": "Install and manage Massa nodes from MassaStation",
+    "description": "Automatically install and run a Massa nodes from MassaStation",
     "assets": {
       "windows": {
         "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_windows-amd64.zip",

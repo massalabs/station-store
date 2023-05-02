@@ -8,7 +8,8 @@ MassaLabs' official plugin list available for Thyra.
 
 - Name: 30 characters max
 - Description: 80 characters max
-- Logo: 40x40 pixels png file
+- Logo: square image file, 40x40 pixels max in the assets/<plugin-name> folder.
+  > > Note: the <plugin-name> folder name must be [slugified](https://www.npmjs.com/package/slugify), i.e. dashes instead of spaces, avoid special characters.
 - Assets: a URL to a zip file, and the corresponding checksum for the following OS:
   - Windows
   - Linux
