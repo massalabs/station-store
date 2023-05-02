@@ -60,55 +60,56 @@ export async function validateList() {
   const onlyOneChange = onlyOneNewAndNoUpdate || onlyOneUpdateAndNoNew;
 
   if (!onlyOneChange) {
-    throw new Error(
+    console.warn(
       "There should be either one new plugin or one updated plugin"
     );
   }
-  //changedPlugin is either the new plugin or the updated plugin
-  let changedPlugin = !!newPlugins.length ? newPlugins[0] : updatedPlugins[0];
-  const allCommonPluginsWhereTheSameInLastVersion = commonPlugins.every(
-    (plugin) => plugin.pluginInLastStoreVersion(lastVersion)
-  );
-
-  const logo = changedPlugin.logo;
-  const url = changedPlugin.url;
-
-  // url should be a github repo : http(s)://github.com/<org>/<repo>
-  const isUrlValid = !!url.match(
-    /https:\/\/github.com\/[a-zA-Z0-9-]+\/[a-zA-Z0-9-]+/
-  );
-
-  if (!isUrlValid) {
-    throw new Error("Invalid url");
-  }
-
-  if (!allCommonPluginsWhereTheSameInLastVersion) {
-    throw new Error("Invalid commonPlugins");
-  }
-
-  const dimLogo = await getImageDimensions(logo);
-
-  if (dimLogo == null) {
-    throw new Error(
-      "Couldn't get logo dimensions - check if the url is correct"
+  else {//changedPlugin is either the new plugin or the updated plugin
+    let changedPlugin = !!newPlugins.length ? newPlugins[0] : updatedPlugins[0];
+    const allCommonPluginsWhereTheSameInLastVersion = commonPlugins.every(
+      (plugin) => plugin.pluginInLastStoreVersion(lastVersion)
     );
-  }
 
-  const isLogoSquare = dimLogo!.width! == dimLogo!.height!;
-  const isLogoSmallerThan40px = dimLogo!.width! < 40;
+    const logo = changedPlugin.logo;
+    const url = changedPlugin.url;
 
-  if (!isLogoSquare && !isLogoSmallerThan40px) {
-    throw new Error("Logo width should be a square smaller than 40px");
-  }
+    // url should be a github repo : http(s)://github.com/<org>/<repo>
+    const isUrlValid = !!url.match(
+      /https:\/\/github.com\/[a-zA-Z0-9-]+\/[a-zA-Z0-9-]+/
+    );
 
-  if (onlyOneUpdateAndNoNew) {
-    const isUpdatedVersionHigher =
-      changedPlugin.isNewVersionHigher(lastVersion);
-    if (!isUpdatedVersionHigher) {
-      throw new Error("Invalid plugin version");
+    if (!isUrlValid) {
+      throw new Error("Invalid url");
     }
+
+    if (!allCommonPluginsWhereTheSameInLastVersion) {
+      throw new Error("Invalid commonPlugins");
+    }
+
+    const dimLogo = await getImageDimensions(logo);
+
+    if (dimLogo == null) {
+      throw new Error(
+        "Couldn't get logo dimensions - check if the url is correct"
+      );
+    }
+
+    const isLogoSquare = dimLogo!.width! == dimLogo!.height!;
+    const isLogoSmallerThan40px = dimLogo!.width! < 40;
+
+    if (!isLogoSquare && !isLogoSmallerThan40px) {
+      throw new Error("Logo width should be a square smaller than 40px");
+    }
+
+    if (onlyOneUpdateAndNoNew) {
+      const isUpdatedVersionHigher =
+        changedPlugin.isNewVersionHigher(lastVersion);
+      if (!isUpdatedVersionHigher) {
+        throw new Error("Invalid plugin version");
+      }
+    }
+    await checkPluginZips(changedPlugin);
   }
-  await checkPluginZips(changedPlugin);
 }
 
 validateList();
