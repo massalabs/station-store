@@ -60,11 +60,9 @@ export async function validateList() {
   const onlyOneChange = onlyOneNewAndNoUpdate || onlyOneUpdateAndNoNew;
 
   if (!onlyOneChange) {
-    console.warn(
-      "There should be either one new plugin or one updated plugin"
-    );
-  }
-  else {//changedPlugin is either the new plugin or the updated plugin
+    console.warn("There should be either one new plugin or one updated plugin");
+  } else {
+    //changedPlugin is either the new plugin or the updated plugin
     let changedPlugin = !!newPlugins.length ? newPlugins[0] : updatedPlugins[0];
     const allCommonPluginsWhereTheSameInLastVersion = commonPlugins.every(
       (plugin) => plugin.pluginInLastStoreVersion(lastVersion)
