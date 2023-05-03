@@ -2,6 +2,7 @@
   {
     "name": "Node Manager",
     "logo": "logo.svg",
+    "thyra_version": ">=0.0.13",
     "description": "Automatically install and run a Massa nodes from MassaStation",
     "assets": {
       "windows": {

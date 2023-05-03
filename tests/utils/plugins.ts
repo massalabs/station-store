@@ -16,6 +16,7 @@ type TypePlugin = {
   name: string;
   logo: string;
   description: string;
+  thyra_version: string;
   assets: {
     windows: Asset;
     linux: Asset;
@@ -30,6 +31,7 @@ export class StorePlugin {
   name: string;
   logo: string;
   description: string;
+  thyra_version: string;
   assets: {
     windows: Asset;
     linux: Asset;
@@ -45,6 +47,7 @@ export class StorePlugin {
     const pluginAssetDirectory = `assets/${name_slugified}`; // replace spaces with dashes
     this.logo = `${pluginAssetDirectory}/${plugin.logo}`;
     this.description = plugin.description;
+    this.thyra_version = plugin.thyra_version;
     this.assets = plugin.assets;
     this.version = plugin.version;
     this.url = plugin.url;
@@ -79,7 +82,6 @@ export async function getPlugins() {
     res.json()
   );
   const plugins: StorePlugin[] = [];
-
   for (const plugin of pluginsData) {
     const storePlugin = new StorePlugin(plugin);
     if (storePlugin.isFollowingStructure()) {

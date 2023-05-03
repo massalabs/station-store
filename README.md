@@ -9,6 +9,7 @@ MassaLabs' official plugin list available for Thyra.
 - Name: 30 characters max
 - Description: 80 characters max
 - Logo: square image file, 40x40 pixels max in the assets/<plugin-name> folder.
+- Version: indicate the requirements for the Thyra version. Example: `>= 0.1.0`
   > Note: the <plugin-name> folder name must be [slugified](https://www.npmjs.com/package/slugify), i.e. dashes instead of spaces, avoid special characters.
 - Assets: a URL to a zip file, and the corresponding checksum for the following OS:
   - Windows
@@ -29,6 +30,7 @@ MassaLabs' official plugin list available for Thyra.
   "name": "Plugin name - 30 characters",
   "description": "Plugin description - 80 characters",
   "logo": "Plugin logo URL - 40 pixels",
+  "version": "Thyra version requirements",
   "assets": {
     "windows": {
       "url": "Plugin zip URL for Windows",
