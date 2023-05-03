@@ -11,11 +11,11 @@ MassaLabs' official plugin list available for Thyra.
 - **logo**: square image file, 40x40 pixels max in the assets/<plugin-name> folder.
 - **thyra_version** : indicate the requirements for the Thyra version. Example: `>= 0.1.0`
   > Note: the <plugin-name> folder name must be [slugified](https://www.npmjs.com/package/slugify), i.e. dashes instead of spaces, avoid special characters.
-- **assets**: a ***URL*** to a zip file, and the corresponding ***checksum*** for the following OS:
+- **assets**: a ***url*** to a zip file, and the corresponding ***checksum*** for the following OS:
   - ***windows***
   - ***linux***
-  - ***macOS-arm64***
-  - ***macOS-amd64***
+  - ***macos-arm64***
+  - ***macos-amd64***
 - **url**: the plugin GitHub repository URL.
 
 2. Add your logo to the assets folder:
