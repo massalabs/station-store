@@ -1,6 +1,6 @@
-# Thyra Plugin Store
+# MassaStation Plugin Store
 
-MassaLabs' official plugin list available for Thyra.
+MassaLabs' official plugin list available for MassaStation.
 
 ## How to add your plugin:
 
@@ -9,13 +9,13 @@ MassaLabs' official plugin list available for Thyra.
 - **name**: 30 characters max
 - **description**: 80 characters max
 - **logo**: square image file, 40x40 pixels max in the assets/<plugin-name> folder.
-- **thyra_version** : indicate the requirements for the Thyra version. Example: `>= 0.1.0`
+- **massaStationVersion** : indicate the requirements for the MassaStation version. Example: `>= 0.1.0`
   > Note: the <plugin-name> folder name must be [slugified](https://www.npmjs.com/package/slugify), i.e. dashes instead of spaces, avoid special characters.
-- **assets**: a ***url*** to a zip file, and the corresponding ***checksum*** for the following OS:
-  - ***windows***
-  - ***linux***
-  - ***macos-arm64***
-  - ***macos-amd64***
+- **assets**: a **_url_** to a zip file, and the corresponding **_checksum_** for the following OS:
+  - **_windows_**
+  - **_linux_**
+  - **_macos-arm64_**
+  - **_macos-amd64_**
 - **url**: the plugin GitHub repository URL.
 
 2. Add your logo to the assets folder:
@@ -30,7 +30,7 @@ MassaLabs' official plugin list available for Thyra.
   "name": "Plugin name - 30 characters",
   "description": "Plugin description - 80 characters",
   "logo": "Plugin logo URL - 40 pixels",
-  "thyra_version": "Thyra version requirements",
+  "massaStationVersion": "MassaStation version requirements",
   "assets": {
     "windows": {
       "url": "Plugin zip URL for Windows",

@@ -16,7 +16,7 @@ type TypePlugin = {
   name: string;
   logo: string;
   description: string;
-  thyra_version: string;
+  massaStationVersion: string;
   assets: {
     windows: Asset;
     linux: Asset;
@@ -31,7 +31,7 @@ export class StorePlugin {
   name: string;
   logo: string;
   description: string;
-  thyra_version: string;
+  massaStationVersion: string;
   assets: {
     windows: Asset;
     linux: Asset;
@@ -47,7 +47,7 @@ export class StorePlugin {
     const pluginAssetDirectory = `assets/${name_slugified}`; // replace spaces with dashes
     this.logo = `${pluginAssetDirectory}/${plugin.logo}`;
     this.description = plugin.description;
-    this.thyra_version = plugin.thyra_version;
+    this.massaStationVersion = plugin.massaStationVersion;
     this.assets = plugin.assets;
     this.version = plugin.version;
     this.url = plugin.url;

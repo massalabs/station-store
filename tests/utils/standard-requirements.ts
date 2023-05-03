@@ -3,7 +3,7 @@ export const structure = {
   properties: {
     name: { type: "string", maxLength: 30 },
     logo: { type: "string" },
-    thyra_version: { type: "string" },
+    massaStationVersion: { type: "string" },
     description: { type: "string", maxLength: 80 },
     assets: {
       type: "object",
@@ -20,7 +20,7 @@ export const structure = {
   required: [
     "name",
     "logo",
-    "thyra_version",
+    "massaStationVersion",
     "description",
     "assets",
     "version",
