@@ -6,17 +6,17 @@ MassaLabs' official plugin list available for Thyra.
 
 1. Prepare your plugin with the following information:
 
-- Name: 30 characters max
-- Description: 80 characters max
-- Logo: square image file, 40x40 pixels max in the assets/<plugin-name> folder.
-- Version: indicate the requirements for the Thyra version. Example: `>= 0.1.0`
+- **name**: 30 characters max
+- **description**: 80 characters max
+- **logo**: square image file, 40x40 pixels max in the assets/<plugin-name> folder.
+- **thyra_version** : indicate the requirements for the Thyra version. Example: `>= 0.1.0`
   > Note: the <plugin-name> folder name must be [slugified](https://www.npmjs.com/package/slugify), i.e. dashes instead of spaces, avoid special characters.
-- Assets: a URL to a zip file, and the corresponding checksum for the following OS:
-  - Windows
-  - Linux
-  - macOS-arm64
-  - macOS-amd64
-- URL: the plugin GitHub repository URL.
+- **assets**: a ***URL*** to a zip file, and the corresponding ***checksum*** for the following OS:
+  - ***windows***
+  - ***linux***
+  - ***macOS-arm64***
+  - ***macOS-amd64***
+- **url**: the plugin GitHub repository URL.
 
 2. Add your logo to the assets folder:
 
@@ -30,7 +30,7 @@ MassaLabs' official plugin list available for Thyra.
   "name": "Plugin name - 30 characters",
   "description": "Plugin description - 80 characters",
   "logo": "Plugin logo URL - 40 pixels",
-  "version": "Thyra version requirements",
+  "thyra_version": "Thyra version requirements",
   "assets": {
     "windows": {
       "url": "Plugin zip URL for Windows",
