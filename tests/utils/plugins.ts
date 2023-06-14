@@ -2,7 +2,7 @@ import * as jsonschema from "jsonschema";
 import * as jsonfile from "jsonfile";
 import fetch from "node-fetch";
 import { structure } from ".";
-const slugify = require("slugify");
+import slugify from "slugify";
 const semver = require("semver");
 const STORE_LIST_URL =
   "https://raw.githubusercontent.com/massalabs/thyra-plugin-store/main/plugins.json";
@@ -14,6 +14,7 @@ type Asset = {
 
 type TypePlugin = {
   name: string;
+  author: string;
   logo: string;
   description: string;
   massaStationVersion: string;
@@ -29,6 +30,7 @@ type TypePlugin = {
 
 export class StorePlugin {
   name: string;
+  author: string;
   logo: string;
   description: string;
   massaStationVersion: string;
@@ -43,7 +45,8 @@ export class StorePlugin {
 
   constructor(plugin: TypePlugin) {
     this.name = plugin.name;
-    const name_slugified = slugify(plugin.name); // replace spaces with dashes
+    this.author = plugin.author;
+    const name_slugified = slugify(plugin.name,{lower:true}); // replace spaces with dashes
     const pluginAssetDirectory = `assets/${name_slugified}`; // replace spaces with dashes
     this.logo = `${pluginAssetDirectory}/${plugin.logo}`;
     this.description = plugin.description;
