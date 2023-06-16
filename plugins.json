@@ -1,6 +1,7 @@
 [
   {
     "name": "Node Manager",
+    "author":"MassaLabs",
     "logo": "logo.svg",
     "massaStationVersion": ">=0.0.13",
     "description": "Automatically install and run a Massa nodes from MassaStation",

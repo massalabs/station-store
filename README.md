@@ -7,6 +7,7 @@ MassaLabs' official plugin list available for MassaStation.
 1. Prepare your plugin with the following information:
 
 - **name**: 30 characters max
+- **author**: 30 characters max
 - **description**: 80 characters max
 - **logo**: square image file, 40x40 pixels max in the assets/<plugin-name> folder.
 - **massaStationVersion** : indicate the requirements for the MassaStation version. Example: `>= 0.1.0`
@@ -28,6 +29,7 @@ MassaLabs' official plugin list available for MassaStation.
 ```json
 {
   "name": "Plugin name - 30 characters",
+  "author": "Plugin author - 30 characters",
   "description": "Plugin description - 80 characters",
   "logo": "Plugin logo URL - 40 pixels",
   "massaStationVersion": "MassaStation version requirements",

@@ -2,6 +2,7 @@ export const structure = {
   type: "object",
   properties: {
     name: { type: "string", maxLength: 30 },
+    author: { type: "string", maxLength: 30 },
     logo: { type: "string" },
     massaStationVersion: { type: "string" },
     description: { type: "string", maxLength: 80 },
