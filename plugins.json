@@ -4,7 +4,7 @@
     "author": "MassaLabs",
     "logo": "logo.svg",
     "massaStationVersion": ">=0.0.13",
-    "description": "Automatically install and run a Massa nodes from MassaStation",
+    "description": "One click install Massa nodes to become a block validator",
     "assets": {
       "windows": {
         "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_windows-amd64.zip",
