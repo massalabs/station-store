@@ -25,5 +25,33 @@
     },
     "version": "0.0.10",
     "url": "https://github.com/massalabs/thyra-node-manager-plugin"
+  },
+  {
+    "name": "MassaWallet",
+    "author": "MassaLabs",
+    "logo": "logo.svg",
+    "massaStationVersion": ">=0.1.14",
+    "description": "Massa Labs official wallet",
+    "assets": {
+      "windows": {
+        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_windows-amd64.zip",
+        "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+      },
+      "linux": {
+        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_linux-amd64.zip",
+        "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+      },
+      "macos-arm64": {
+        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-arm64.zip",
+        "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+      },
+      "macos-amd64": {
+        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-amd64.zip",
+        "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+      }
+    },
+    "version": "0.1.1",
+    "url": "https://github.com/massalabs/thyra-plugin-wallet"
+
   }
 ]
