@@ -1,7 +1,7 @@
 [
   {
     "name": "Node Manager",
-    "author":"MassaLabs",
+    "author": "MassaLabs",
     "logo": "logo.svg",
     "massaStationVersion": ">=0.0.13",
     "description": "Automatically install and run a Massa nodes from MassaStation",
@@ -25,5 +25,32 @@
     },
     "version": "0.0.10",
     "url": "https://github.com/massalabs/thyra-node-manager-plugin"
+  },
+  {
+    "name": "MassaWallet",
+    "author": "MassaLabs",
+    "logo": "logo.svg",
+    "massaStationVersion": ">=0.1.14",
+    "description": "Massa Labs official wallet",
+    "assets": {
+      "windows": {
+        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_windows-amd64.zip",
+        "checksum": "cb3bdc07e8baa3767265d49b3ceb78cc"
+      },
+      "linux": {
+        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_linux-amd64.zip",
+        "checksum": "0b2c8f6c40c31eeb2563923944c10dfa"
+      },
+      "macos-arm64": {
+        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-arm64.zip",
+        "checksum": "85ecbf9d1b32cf9ba19728d8d63dc188"
+      },
+      "macos-amd64": {
+        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-amd64.zip",
+        "checksum": "f71a7c112518abfd5836d09a4ea8748e"
+      }
+    },
+    "version": "0.1.1",
+    "url": "https://github.com/massalabs/thyra-plugin-wallet"
   }
 ]
