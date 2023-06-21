@@ -1,56 +1,83 @@
 [
   {
-    "name": "Node Manager",
+    "name": "Massa node-manager",
     "author":"Massa Labs",
-    "logo": "logo.svg",
+    "logo": "node.svg",
     "massaStationVersion": ">=0.0.13",
-    "description": "Join Massa network in a single click! Install, configure and manage Massa nodes.",
+    "description": "Join Massa network now. Automatically install, configure and manage Massa nodes.",
     "assets": {
       "windows": {
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_windows-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.12/thyra-plugin-node-manager_windows-amd64.zip",
         "checksum": "877c15e37ee4b9a6880467a0e5233212"
       },
       "linux": {
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_linux-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.12/thyra-plugin-node-manager_linux-amd64.zip",
         "checksum": "e182d77e6773b8e5745dfaf29e56ee55"
       },
       "macos-arm64": {
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_darwin-arm64.zip",
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.12/thyra-plugin-node-manager_darwin-arm64.zip",
         "checksum": "421f7b27ff1bede9997cd39e086567d8"
       },
       "macos-amd64": {
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_darwin-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.12/thyra-plugin-node-manager_darwin-amd64.zip",
         "checksum": "a179319ee6d8e5caae3f945989a8135a"
       }
     },
-    "version": "0.0.10",
-    "url": "https://github.com/massalabs/thyra-node-manager-plugin"
+    "version": "0.0.12",
+    "url": "https://github.com/massalabs/station-massa-node-manager"
   },
   {
-    "name": "MassaWallet",
-    "author": "MassaLabs",
-    "logo": "logo.svg",
+    "name": "Massa Wallet",
+    "author": "Massa Labs",
+    "logo": "wallet.svg",
     "massaStationVersion": ">=0.1.14",
-    "description": "Massa Labs official wallet",
+    "description": "Massa blockchain official wallet",
     "assets": {
       "windows": {
-        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_windows-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.1/wallet-plugin_windows-amd64.zip",
         "checksum": "cb3bdc07e8baa3767265d49b3ceb78cc"
       },
       "linux": {
-        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_linux-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.1/wallet-plugin_linux-amd64.zip",
         "checksum": "0b2c8f6c40c31eeb2563923944c10dfa"
       },
       "macos-arm64": {
-        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-arm64.zip",
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.1/wallet-plugin_darwin-arm64.zip",
         "checksum": "85ecbf9d1b32cf9ba19728d8d63dc188"
       },
       "macos-amd64": {
-        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.1/wallet-plugin_darwin-amd64.zip",
         "checksum": "f71a7c112518abfd5836d09a4ea8748e"
       }
     },
-    "version": "0.1.1",
-    "url": "https://github.com/massalabs/thyra-plugin-wallet"
+    "version": "0.1.2",
+    "url": "https://github.com/massalabs/station-massa-wallet"
+  }
+  {
+    "name": "Hello World",
+    "author": "Massa Labs",
+    "logo": "hello_world.svg",
+    "massaStationVersion": ">=0.1.14",
+    "description": "Hello world plugin to learn by doing",
+    "assets": {
+      "windows": {
+        "url": "https://github.com/massalabs/station-massa-hello-world/releases/download/0.0.7/thyra-plugin-hello-world_linux-amd64.zip",
+        "checksum": "cb3bdc07e8baa3767265d49b3ceb78cc"
+      },
+      "linux": {
+        "url": "https://github.com/massalabs/station-massa-hello-world/releases/download/0.0.7/thyra-plugin-hello-world_linux-amd64.zip",
+        "checksum": "0b2c8f6c40c31eeb2563923944c10dfa"
+      },
+      "macos-arm64": {
+        "url": "https://github.com/massalabs/station-massa-hello-world/releases/download/0.0.7/thyra-plugin-hello-world_darwin-arm64.zip",
+        "checksum": "85ecbf9d1b32cf9ba19728d8d63dc188"
+      },
+      "macos-amd64": {
+        "url": "https://github.com/massalabs/station-massa-hello-world/releases/download/0.0.7/thyra-plugin-hello-world_darwin-amd64.zip",
+        "checksum": "f71a7c112518abfd5836d09a4ea8748e"
+      }
+    },
+    "version": "0.0.6",
+    "url": "https://github.com/massalabs/station-massa-hello-world"
   }
 ]
