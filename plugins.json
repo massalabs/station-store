@@ -7,7 +7,7 @@
     "description": "Join Massa network in a single click! Install, configure and manage Massa nodes.",
     "assets": {
       "windows": {
-        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.13/station-massa-node-managerr_windows-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.13/station-massa-node-manager_windows-amd64.zip",
         "checksum": "877c15e37ee4b9a6880467a0e5233212"
       },
       "linux": {
