@@ -5,7 +5,7 @@ import { structure } from ".";
 import slugify from "slugify";
 const semver = require("semver");
 const STORE_LIST_URL =
-  "https://raw.githubusercontent.com/massalabs/thyra-plugin-store/main/plugins.json";
+  "https://raw.githubusercontent.com/massalabs/station-store/main/plugins.json";
 
 type Asset = {
   url: string;
