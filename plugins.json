@@ -1,30 +1,30 @@
 [
   {
-    "name": "Node Manager",
-    "author":"Massa Labs",
+    "name": "Massa Node-manager",
+    "author": "Massa Labs",
     "logo": "logo.svg",
     "massaStationVersion": ">=0.0.13",
-    "description": "Join Massa network in a single click! Install, configure and manage Massa nodes.",
+    "description": "Join Massa network now. Automatically install, configure and manage Massa nodes.",
     "assets": {
       "windows": {
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_windows-amd64.zip",
-        "checksum": "877c15e37ee4b9a6880467a0e5233212"
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.14/station-massa-node-manager_windows-amd64.zip",
+        "checksum": "c92aec61868e841640e072f5f21f5d1f"
       },
       "linux": {
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_linux-amd64.zip",
-        "checksum": "e182d77e6773b8e5745dfaf29e56ee55"
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.14/station-massa-node-manager_linux-amd64.zip",
+        "checksum": "ddd7be59ffd04b3cbd4e664d5659e79e"
       },
       "macos-arm64": {
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_darwin-arm64.zip",
-        "checksum": "421f7b27ff1bede9997cd39e086567d8"
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.14/station-massa-node-manager_darwin-arm64.zip",
+        "checksum": "012b839eecc4e7c5455b2bb580c8bcdc"
       },
       "macos-amd64": {
-        "url": "https://github.com/massalabs/thyra-node-manager-plugin/releases/download/v0.0.10/thyra-plugin-node-manager_darwin-amd64.zip",
-        "checksum": "a179319ee6d8e5caae3f945989a8135a"
+        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.14/station-massa-node-manager_darwin-amd64.zip",
+        "checksum": "f0e614c740e23cd73c27b600d455a61c"
       }
     },
-    "version": "0.0.10",
-    "url": "https://github.com/massalabs/thyra-node-manager-plugin"
+    "version": "0.0.14",
+    "url": "https://github.com/massalabs/station-massa-node-manager-plugin"
   },
   {
     "name": "MassaWallet",
@@ -34,23 +34,23 @@
     "description": "Massa Labs official wallet",
     "assets": {
       "windows": {
-        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_windows-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-plugin-wallet/releases/download/v0.1.1/wallet-plugin_windows-amd64.zip",
         "checksum": "cb3bdc07e8baa3767265d49b3ceb78cc"
       },
       "linux": {
-        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_linux-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-plugin-wallet/releases/download/v0.1.1/wallet-plugin_linux-amd64.zip",
         "checksum": "0b2c8f6c40c31eeb2563923944c10dfa"
       },
       "macos-arm64": {
-        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-arm64.zip",
+        "url": "https://github.com/massalabs/station-massa-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-arm64.zip",
         "checksum": "85ecbf9d1b32cf9ba19728d8d63dc188"
       },
       "macos-amd64": {
-        "url": "https://github.com/massalabs/thyra-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-amd64.zip",
+        "url": "https://github.com/massalabs/station-massa-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-amd64.zip",
         "checksum": "f71a7c112518abfd5836d09a4ea8748e"
       }
     },
     "version": "0.1.1",
-    "url": "https://github.com/massalabs/thyra-plugin-wallet"
+    "url": "https://github.com/massalabs/station-massa-plugin-wallet"
   }
 ]
