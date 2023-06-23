@@ -27,30 +27,30 @@
     "url": "https://github.com/massalabs/station-massa-node-manager-plugin"
   },
   {
-    "name": "MassaWallet",
-    "author": "MassaLabs",
+    "name": "Massa Wallet",
+    "author": "Massa Labs",
     "logo": "logo.svg",
     "massaStationVersion": ">=0.1.14",
-    "description": "Massa Labs official wallet",
+    "description": "Massa blockchain official wallet",
     "assets": {
       "windows": {
-        "url": "https://github.com/massalabs/station-massa-plugin-wallet/releases/download/v0.1.1/wallet-plugin_windows-amd64.zip",
-        "checksum": "cb3bdc07e8baa3767265d49b3ceb78cc"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.4/wallet-plugin_windows-amd64.zip",
+        "checksum": "4cea87b9b2830b7cec8598e8a751b15b"
       },
       "linux": {
-        "url": "https://github.com/massalabs/station-massa-plugin-wallet/releases/download/v0.1.1/wallet-plugin_linux-amd64.zip",
-        "checksum": "0b2c8f6c40c31eeb2563923944c10dfa"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.4/wallet-plugin_linux-amd64.zip",
+        "checksum": "76f2d5421d62613004e71612f7cc5167"
       },
       "macos-arm64": {
-        "url": "https://github.com/massalabs/station-massa-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-arm64.zip",
-        "checksum": "85ecbf9d1b32cf9ba19728d8d63dc188"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.4/wallet-plugin_darwin-arm64.zip",
+        "checksum": "5251151c26d1f99b55efbe78aa3c72b4"
       },
       "macos-amd64": {
-        "url": "https://github.com/massalabs/station-massa-plugin-wallet/releases/download/v0.1.1/wallet-plugin_darwin-amd64.zip",
-        "checksum": "f71a7c112518abfd5836d09a4ea8748e"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.4/wallet-plugin_darwin-amd64.zip",
+        "checksum": "278f96b21a9aa41cd553f0626cf1e566"
       }
     },
-    "version": "0.1.1",
+    "version": "0.1.4",
     "url": "https://github.com/massalabs/station-massa-plugin-wallet"
   }
 ]
