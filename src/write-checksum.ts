@@ -1,6 +1,6 @@
 import fs from 'fs';
 import slugify from 'slugify';
-import { StorePlugin, calculateChecksum, getPluginsData } from './tests/utils';
+import { StorePlugin, calculateChecksum, getPluginsData } from './utils';
 import { format } from 'prettier';
 
 async function main(name?: string) {
