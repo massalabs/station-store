@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "JavaScript test project",
   "scripts": {
-    "test": "ts-node tests/validate-store-update.ts"
+    "test": "ts-node tests/validate-store-update.ts",
+    "write-checksum": "ts-node write-checksum.ts"
   },
   "devDependencies": {
     "@types/adm-zip": "^0.5.0",

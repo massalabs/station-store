@@ -79,8 +79,17 @@ export class StorePlugin {
   }
 }
 
+export async function writePluginsData(plugins: StorePlugin[]) {
+  await jsonfile.writeFile("plugins.json", plugins);
+}
+
+export async function getPluginsData() {
+
+  return await jsonfile.readFile("plugins.json");
+}
+
 export async function getPlugins() {
-  const pluginsData: StorePlugin[] = await jsonfile.readFile("plugins.json");
+  const pluginsData: TypePlugin[] = await getPluginsData();
   const lastVersion: StorePlugin[] = await fetch(STORE_LIST_URL).then((res) =>
     res.json()
   );
