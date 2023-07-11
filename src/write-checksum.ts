@@ -1,7 +1,10 @@
 import fs from 'fs';
-import slugify from 'slugify';
 import { StorePlugin, calculateChecksum, getPluginsData } from './utils';
 import { format } from 'prettier';
+
+function slugify (str: string): string {
+  return str.trim().toLowerCase().replace(/\s+/g, '-');
+}
 
 async function main(name?: string) {
   const plugins: StorePlugin[] = await getPluginsData();
@@ -9,7 +12,7 @@ async function main(name?: string) {
   if (name) {
     const plugin = plugins.find(
       (plugin) =>
-        slugify(plugin.name, { lower: true }) === slugify(name, { lower: true })
+        slugify(plugin.name) === slugify(name)
     );
   
     if (!plugin) {
@@ -28,13 +31,11 @@ async function main(name?: string) {
 
 async function processPlugin(plugin: StorePlugin) {
   const { assets } = plugin;
-  await Promise.all(
-    Object.keys(assets).map(async (key) => {
-      const asset = assets[key];
-      const checksum = await calculateChecksum(asset.url);
-      plugin.assets[key].checksum = checksum;
-    })
-  );
+
+  for (const key of Object.keys(assets)) {
+    const asset = assets[key];
+    asset.checksum = await calculateChecksum(asset.url);
+  }
 }
 
 const args = process.argv.slice(2);
