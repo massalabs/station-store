@@ -24,7 +24,7 @@ MassaLabs' official plugin list available for MassaStation.
    - Create a folder with your plugin assets: `mkdir assets/<plugin-name>`
    - Add your logo to the folder: `cp <logo-path> assets/<plugin-name>/<logo-name>` (or just drag and drop it into the folder).
 
-3. Edit the `plugins.json` file to add your plugin information following the template below. you can keep the checksum field empty:
+3. Edit the `plugins.json` file to add your plugin information following the template below. You can keep the checksum field empty:
 
 ```json
 {
