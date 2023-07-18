@@ -34,8 +34,8 @@
     "description": "Massa blockchain official wallet",
     "assets": {
       "windows": {
-        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.5/wallet-plugin_darwin-amd64.zip",
-        "checksum": "6f705bbb25a1b5583fe12ec625607cb0"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.5/wallet-plugin_windows-amd64.zip",
+        "checksum": "afd8770e9dfdc465e436ea31c029bcf7"
       },
       "linux": {
         "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.1.5/wallet-plugin_linux-amd64.zip",

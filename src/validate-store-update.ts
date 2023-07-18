@@ -8,10 +8,10 @@ import {
 } from "./utils";
 
 const patterns = {
-  windows: /^[a-zA-Z0-9]+\.exe$/,
-  linux: /^[a-zA-Z0-9]+$/,
-  "macos-amd64": /^[a-zA-Z0-9]+$/,
-  "macos-arm64": /^[a-zA-Z0-9]+$/
+  windows: /\.exe$/,
+  linux: /^[^.]+$/,
+  "macos-amd64": /^[^.]+$/,
+  "macos-arm64": /^[^.]+$/
 };
 function areAllFilesInZipValid(files: Array<string>, pattern: RegExp) {
   return files.every(
@@ -62,9 +62,7 @@ export async function validateList() {
     const logo = changedPlugin.getLogoPath();
     const url = changedPlugin.url;
 
-    const isUrlValid = !!url.match(
-      /^(https?:\/\/)[a-zA-Z0-9]+$/
-    );
+    const isUrlValid: boolean = /^https?:\/\/.+$/.test(url);
 
     if (!isUrlValid) {
       throw new Error("Invalid url");
