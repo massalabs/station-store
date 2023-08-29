@@ -34,23 +34,23 @@
     "description": "Massa blockchain official wallet",
     "assets": {
       "windows": {
-        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.2.3/wallet-plugin_windows-amd64.zip",
-        "checksum": "78311da288322065c17cf0fae0c90187"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.2.4/wallet-plugin_windows-amd64.zip",
+        "checksum": "30b83890b32afa801fa6f0bda678dedd"
       },
       "linux": {
-        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.2.3/wallet-plugin_linux-amd64.zip",
-        "checksum": "3a587c8996ead6dff9413186936aaf90"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.2.4/wallet-plugin_linux-amd64.zip",
+        "checksum": "b1fe39ad7c0bd164cb08a9ab929377bc"
       },
       "macos-arm64": {
-        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.2.3/wallet-plugin_darwin-arm64.zip",
-        "checksum": "2710dce4fd86dd008d3dde32996d2e4b"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.2.4/wallet-plugin_darwin-arm64.zip",
+        "checksum": "b3d2888298eb2b31dd4722a8830ae5f1"
       },
       "macos-amd64": {
-        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.2.3/wallet-plugin_darwin-amd64.zip",
-        "checksum": "4a3bdd4b3b8fd7a6b81b491a0816964f"
+        "url": "https://github.com/massalabs/station-massa-wallet/releases/download/v0.2.4/wallet-plugin_darwin-amd64.zip",
+        "checksum": "b0ec455b334dc3f167256b3b89574e84"
       }
     },
-    "version": "0.2.2",
+    "version": "0.2.4",
     "url": "https://github.com/massalabs/station-massa-plugin-wallet"
   }
 ]
