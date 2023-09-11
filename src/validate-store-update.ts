@@ -13,15 +13,18 @@ const patterns = {
   "macos-amd64": /^[^.]+$/,
   "macos-arm64": /^[^.]+$/
 };
+
 function areAllFilesInZipValid(files: Array<string>, pattern: RegExp) {
-  return files.every(
-    // all files must be either a binary either a manifest either an image
-    (file) =>
-      (!!file.match(pattern) !== // file is a binary
-        IMAGE_FORMATS.some((format) => file.endsWith(`.${format}`))) !== // file is an image
-      (file === "manifest.json") // file is a manifest
-  );
+  return files.every((file) => {
+    const isBinary = !!file.match(pattern);
+    const isImage = IMAGE_FORMATS.some((format) => file.endsWith(`.${format}`));
+    const isManifest = file === "manifest.json";
+    const isZip = file.endsWith(".zip")
+
+    return (isBinary || isImage || isManifest || isZip);
+  });
 }
+
 async function checkPluginZips(plugin: StorePlugin) {
   for (let assetName in plugin.assets) {
     const asset = plugin.assets[assetName];
