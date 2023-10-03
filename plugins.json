@@ -1,32 +1,5 @@
 [
   {
-    "name": "Massa Node-manager",
-    "author": "Massa Labs",
-    "logo": "logo.svg",
-    "massaStationVersion": ">=0.0.13",
-    "description": "Join Massa network now. Automatically install, configure and manage Massa nodes.",
-    "assets": {
-      "windows": {
-        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.14/station-massa-node-manager_windows-amd64.zip",
-        "checksum": "c92aec61868e841640e072f5f21f5d1f"
-      },
-      "linux": {
-        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.14/station-massa-node-manager_linux-amd64.zip",
-        "checksum": "ddd7be59ffd04b3cbd4e664d5659e79e"
-      },
-      "macos-arm64": {
-        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.14/station-massa-node-manager_darwin-arm64.zip",
-        "checksum": "012b839eecc4e7c5455b2bb580c8bcdc"
-      },
-      "macos-amd64": {
-        "url": "https://github.com/massalabs/station-massa-node-manager/releases/download/v0.0.14/station-massa-node-manager_darwin-amd64.zip",
-        "checksum": "f0e614c740e23cd73c27b600d455a61c"
-      }
-    },
-    "version": "0.0.14",
-    "url": "https://github.com/massalabs/station-massa-node-manager-plugin"
-  },
-  {
     "name": "Massa Wallet",
     "author": "Massa Labs",
     "logo": "logo.svg",
