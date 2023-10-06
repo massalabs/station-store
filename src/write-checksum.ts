@@ -30,10 +30,7 @@ async function main(name?: string) {
 }
 
 async function processPlugin(plugin: StorePlugin) {
-  const { assets } = plugin;
-
-  for (const key of Object.keys(assets)) {
-    const asset = assets[key];
+  for( let [_, asset] of Object.entries(plugin.assets)) {
     asset.checksum = await calculateChecksum(asset.url);
   }
 }
