@@ -95,6 +95,19 @@ export async function getPluginsData() {
   return await jsonfile.readFile("plugins.json");
 }
 
+/**
+ * Retrieves plugins, compares them with the last version from a store, and categorizes them.
+ * It gets the current plugins data, then compares it against the last known version of
+ * plugins. Plugins are distinguished based on whether they have changed or are common
+ * (unchanged) compared to the last version.
+ *
+ * @returns A Promise that resolves to an object containing two properties:
+ * - `commonPlugins`: An array of `StorePlugin` instances that have not changed compared to the last version.
+ * - `changedPlugins`: An array of `StorePlugin` instances that have changes compared to the last version.
+ *
+ * @throws Will throw an error if a `StorePlugin` constructed from the plugins data does not follow
+ * the expected structure.
+ */
 export async function getPlugins() {
   const pluginsData: TypePlugin[] = await getPluginsData();
   const lastVersion: StorePlugin[] = await fetch(STORE_LIST_URL).then((res) =>
