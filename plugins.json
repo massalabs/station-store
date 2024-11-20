@@ -7,23 +7,23 @@
     "description": "Massa blockchain official wallet",
     "assets": {
       "windows": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.4.4/wallet-plugin_windows-amd64.zip",
-        "checksum": "8ef374c0f253714ae563b573ae369f1b"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.4.5/wallet-plugin_windows-amd64.zip",
+        "checksum": "0f93fcc264e01b5798cca4813022a705"
       },
       "linux": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.4.4/wallet-plugin_linux-amd64.zip",
-        "checksum": "e80be8346f4bb559e708d1a3b9b07073"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.4.5/wallet-plugin_linux-amd64.zip",
+        "checksum": "eec1744a344cde85b6cd94d1bc04c5fb"
       },
       "macos-arm64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.4.4/wallet-plugin_darwin-arm64.zip",
-        "checksum": "80a486027eb9eccf12f6b6c5541a2dfa"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.4.5/wallet-plugin_darwin-arm64.zip",
+        "checksum": "7e458eaf90201738f1789e597999589f"
       },
       "macos-amd64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.4.4/wallet-plugin_darwin-amd64.zip",
-        "checksum": "3a4402571a198d0ab38766743db9a89d"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.4.5/wallet-plugin_darwin-amd64.zip",
+        "checksum": "e6396fcb27f7e8a69f22bcd09b57ad66"
       }
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "url": "https://github.com/massalabs/station-massa-wallet"
   }
 ]
