@@ -9,7 +9,7 @@ const AdmZip = require("adm-zip");
 export async function get(url: string): Promise<Buffer> {
   const options = {
     method: "GET",
-    url: url,
+    url,
     responseType: "arraybuffer",
   };
   const { data } = await axios(options);
