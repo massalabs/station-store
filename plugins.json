@@ -25,5 +25,32 @@
     },
     "version": "0.5.1",
     "url": "https://github.com/massalabs/station-massa-wallet"
+  },
+  {
+    "name": "Local DeWeb Provider",
+    "author": "Massa Labs",
+    "logo": "favicon.png",
+    "massaStationVersion": ">=0.6.0",
+    "description": "Your private access to DeWeb",
+    "assets": {
+      "windows": {
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.4/deweb-plugin_windows_amd64.zip",
+        "checksum": "3746da4a97189e03ea3288df382a1f31"
+      },
+      "linux": {
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.4/deweb-plugin_linux_amd64.zip",
+        "checksum": "a01ae9f620ce9c759dace7939a3045df"
+      },
+      "macos-arm64": {
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.4/deweb-plugin_darwin_arm64.zip",
+        "checksum": "d997a5cebee60310a5cbf1d183dbc457"
+      },
+      "macos-amd64": {
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.4/deweb-plugin_darwin_amd64.zip",
+        "checksum": "5d3d2da990974cc84666b41e5ad6b335"
+      }
+    },
+    "version": "0.4.4",
+    "url": "https://github.com/massalabs/deweb"
   }
 ]
