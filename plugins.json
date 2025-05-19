@@ -30,7 +30,7 @@
     "name": "Local DeWeb Provider",
     "author": "Massa Labs",
     "logo": "favicon.png",
-    "massaStationVersion": ">=0.6.0",
+    "massaStationVersion": ">=0.7.0",
     "description": "Your private access to DeWeb",
     "assets": {
       "windows": {
