@@ -51,17 +51,18 @@ async function checkPluginZips(plugin: StorePlugin) {
   }
 }
 export async function validateList() {
-  const { changedPlugins } = await getPlugins();
+  const plugins = await getPlugins();
+
   // check if all plugins have a different name
-  const setPluginName = new Set(changedPlugins.map((plugin) => plugin.name));
+  const setPluginName = new Set(plugins.map((plugin) => plugin.name));
   const allPluginsHaveDifferentNames =
-    setPluginName.size == changedPlugins.length;
+    setPluginName.size == plugins.length;
 
   if (!allPluginsHaveDifferentNames) {
     throw new Error("Error: Plugin name is duplicated");
   }
 
-  changedPlugins.forEach(async (changedPlugin) => {
+  plugins.forEach(async (changedPlugin) => {
     const logo = changedPlugin.getLogoPath();
     const url = changedPlugin.url;
 

@@ -1,9 +1,7 @@
 import * as jsonschema from "jsonschema";
 import * as jsonfile from "jsonfile";
-import fetch from "node-fetch";
 import { getManifestContent, pluginStructure, structure } from ".";
 import slugify from "slugify";
-import deepEqual from "deep-equal";
 
 const semver = require("semver");
 const STORE_LIST_URL =
@@ -95,56 +93,8 @@ export async function getPluginsData() {
   return await jsonfile.readFile("plugins.json");
 }
 
-/**
- * Retrieves plugins, compares them with the last version from a store, and categorizes them.
- * It gets the current plugins data, then compares it against the last known version of
- * plugins. Plugins are distinguished based on whether they have changed or are common
- * (unchanged) compared to the last version.
- *
- * @returns A Promise that resolves to an object containing two properties:
- * - `commonPlugins`: An array of `StorePlugin` instances that have not changed compared to the last version.
- * - `changedPlugins`: An array of `StorePlugin` instances that have changes compared to the last version.
- *
- * @throws Will throw an error if a `StorePlugin` constructed from the plugins data does not follow
- * the expected structure.
- */
+
 export async function getPlugins() {
-  const pluginsData: TypePlugin[] = await getPluginsData();
-  const lastVersion: StorePlugin[] = await fetch(STORE_LIST_URL).then((res) =>
-    res.json()
-  );
-  const plugins: StorePlugin[] = [];
-  for (const plugin of pluginsData) {
-    const storePlugin = new StorePlugin(plugin);
-    if (storePlugin.isFollowingStructure()) {
-      plugins.push(storePlugin);
-    } else {
-      throw Error(`Invalid plugin object: ${JSON.stringify(plugin)}`);
-    }
-  }
-
-  let commonPlugins: StorePlugin[] = [];
-  let changedPlugins: StorePlugin[] = [];
-
-  plugins.forEach((plugin) => {
-    let lastVersionPlugin = lastVersion.find(
-      (lastVersionPlugin) => lastVersionPlugin.name === plugin.name
-    );
-
-    if (lastVersionPlugin) {
-      const objEquals = deepEqual(plugin, lastVersionPlugin);
-      if (objEquals) {
-        commonPlugins.push(plugin);
-      } else {
-        changedPlugins.push(plugin);
-      }
-    } else {
-      changedPlugins.push(plugin);
-    }
-  });
-
-  return {
-    commonPlugins,
-    changedPlugins,
-  };
+  const plugins: TypePlugin[] = await getPluginsData();
+  return plugins.map((plugin) => new StorePlugin(plugin));
 }

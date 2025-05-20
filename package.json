@@ -15,14 +15,12 @@
     "image-size": "^1.0.2",
     "jsonfile": "^6.1.0",
     "jsonschema": "^1.4.1",
-    "node-fetch": "^2.6.9",
     "prettier": "2.8.8",
     "semver": "^7.5.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "deep-equal": "^2.2.1",
     "slugify": "^1.6.6"
   }
 }
