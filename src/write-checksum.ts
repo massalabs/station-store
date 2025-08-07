@@ -1,9 +1,9 @@
-import fs from 'fs';
-import { StorePlugin, calculateChecksum, getPluginsData } from './utils';
-import { format } from 'prettier';
+import fs from "fs";
+import { StorePlugin, calculateChecksum, getPluginsData } from "./utils";
+import { format } from "prettier";
 
-function slugify (str: string): string {
-  return str.trim().toLowerCase().replace(/\s+/g, '-');
+function slugify(str: string): string {
+  return str.trim().toLowerCase().replace(/\s+/g, "-");
 }
 
 async function main(name?: string) {
@@ -11,8 +11,7 @@ async function main(name?: string) {
 
   if (name) {
     const plugin = plugins.find(
-      (plugin) =>
-        slugify(plugin.name) === slugify(name)
+      (plugin) => slugify(plugin.name) === slugify(name)
     );
 
     if (!plugin) {
@@ -30,7 +29,7 @@ async function main(name?: string) {
 }
 
 async function processPlugin(plugin: StorePlugin) {
-  for( let [_, asset] of Object.entries(plugin.assets)) {
+  for (let [_, asset] of Object.entries(plugin.assets)) {
     asset.checksum = await calculateChecksum(asset.url);
   }
 }

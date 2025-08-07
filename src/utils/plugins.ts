@@ -53,7 +53,7 @@ export class StorePlugin {
     this.version = plugin.version;
     this.url = plugin.url;
   }
-  
+
   getLogoPath() {
     const name_slugified = slugify(this.name, { lower: true });
     const pluginAssetDirectory = `assets/${name_slugified}`;
@@ -92,7 +92,6 @@ export async function writePluginsData(plugins: StorePlugin[]) {
 export async function getPluginsData() {
   return await jsonfile.readFile("plugins.json");
 }
-
 
 export async function getPlugins() {
   const plugins: TypePlugin[] = await getPluginsData();

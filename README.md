@@ -56,8 +56,9 @@ MassaLabs' official plugin list available for MassaStation.
 },
 
 ```
+
 4. Generate the checksums : `npm run write-checksum your-slugified-plugin-name`
-> replace spaces in the plugin name by dashes to execute this command
+   > replace spaces in the plugin name by dashes to execute this command
 5. Make a pull request to submit your contribution to the MassaLabs team for approval.
 
 ## security checks

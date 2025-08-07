@@ -24,7 +24,9 @@ export async function getZipFileList(url: string): Promise<string[]> {
   const zipFileBuffer = await get(url);
   const zip = new AdmZip(zipFileBuffer);
   const entries = zip.getEntries();
-  return entries.map((entry) => entry.name);
+  return entries
+    .filter((entry) => !entry.isDirectory)
+    .map((entry) => entry.name);
 }
 
 /**
