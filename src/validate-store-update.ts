@@ -1,51 +1,76 @@
 import {
   getPlugins,
-  IMAGE_FORMATS,
-  checkFileChecksum,
-  getZipFileList,
+  get,
   getImageDimensions,
   StorePlugin,
+  pluginStructure,
 } from "./utils";
+import { createHash } from "crypto";
+import * as jsonschema from "jsonschema";
+const AdmZip = require("adm-zip");
 
-const patterns = {
-  windows: /\.exe$/,
-  linux: /^[^.]+$/,
-  "macos-amd64": /^[^.]+$/,
-  "macos-arm64": /^[^.]+$/
-};
+function areAllMandatoryFilesPresent(files: Array<string>) {
+  const hasManifest = files.includes("manifest.json");
 
-function areAllFilesInZipValid(files: Array<string>, pattern: RegExp) {
-  return files.every((file) => {
-    const isBinary = !!file.match(pattern);
-    const isImage = IMAGE_FORMATS.some((format) => file.endsWith(`.${format}`));
-    const isManifest = file === "manifest.json";
-    const isZip = file.endsWith(".zip")
+  if (!hasManifest) {
+    console.log("Missing mandatory file: manifest.json");
+    return false;
+  }
+  return true;
+}
 
-    return (isBinary || isImage || isManifest || isZip);
-  });
+function calculateChecksumFromBuffer(buffer: Buffer): string {
+  return createHash("md5").update(buffer).digest("hex");
+}
+
+function getFileListFromZip(zipBuffer: Buffer): string[] {
+  const zip = new AdmZip(zipBuffer);
+  const entries = zip.getEntries();
+  return entries
+    .filter((entry) => !entry.isDirectory)
+    .map((entry) => entry.name);
+}
+
+function getManifestFromZip(zipBuffer: Buffer): any {
+  const zip = new AdmZip(zipBuffer);
+  const entries = zip.getEntries();
+  const manifest = entries.find(
+    (entry: { name: string }) => entry.name === "manifest.json"
+  );
+  return JSON.parse(zip.readAsText(manifest));
 }
 
 async function checkPluginZips(plugin: StorePlugin) {
-  for (let assetName in plugin.assets) {
-    const asset = plugin.assets[assetName];
+  console.log(`Checking plugin ${plugin.name}`);
+  for (let os in plugin.assets) {
+    const asset = plugin.assets[os];
     let { url: assetUrl, checksum } = asset;
-    let files = await getZipFileList(assetUrl);
-    const filesAreValid = areAllFilesInZipValid(files, patterns[assetName]);
 
-    if (!filesAreValid) {
-      throw new Error(`Invalid files in zip for ${assetName}`);
-    }
+    // Download zip file only once
+    const zipBuffer = await get(assetUrl);
 
-    let checksumIsValid = await checkFileChecksum(assetUrl, checksum);
-
-    if (!checksumIsValid) {
+    // Validate checksum
+    const calculatedChecksum = calculateChecksumFromBuffer(zipBuffer);
+    if (calculatedChecksum !== checksum) {
       throw new Error("Invalid asset checksum");
     }
 
-    let manifestIsValid =
-      await plugin.isPluginManifestInAssetFollowingStructure(assetUrl);
+    // Get file list from zip
+    const files = getFileListFromZip(zipBuffer);
+    const filesAreValid = areAllMandatoryFilesPresent(files);
+    if (!filesAreValid) {
+      throw new Error(`Missing mandatory files in zip for ${os}`);
+    }
 
-    if (!manifestIsValid) {
+    // Validate manifest structure
+    try {
+      const manifest = getManifestFromZip(zipBuffer);
+      const manifestIsValid =
+        jsonschema.validate(manifest, pluginStructure).errors.length === 0;
+      if (!manifestIsValid) {
+        throw new Error("Invalid manifest");
+      }
+    } catch (error) {
       throw new Error("Invalid manifest");
     }
   }
@@ -55,8 +80,7 @@ export async function validateList() {
 
   // check if all plugins have a different name
   const setPluginName = new Set(plugins.map((plugin) => plugin.name));
-  const allPluginsHaveDifferentNames =
-    setPluginName.size == plugins.length;
+  const allPluginsHaveDifferentNames = setPluginName.size == plugins.length;
 
   if (!allPluginsHaveDifferentNames) {
     throw new Error("Error: Plugin name is duplicated");
