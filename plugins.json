@@ -61,23 +61,23 @@
     "description": "Run your local node and start staking",
     "assets": {
       "windows": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.3.3/node-manager-plugin_windows-amd64.zip",
-        "checksum": "9ca88dd6233165188abb63b6fdfcb23c"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.0/node-manager-plugin_windows-amd64.zip",
+        "checksum": "5c5b3e31b840f041503c9cc50656a282"
       },
       "linux": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.3.3/node-manager-plugin_linux-amd64.zip",
-        "checksum": "2075e1bb77e24fa71819ad559d23a63b"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.0/node-manager-plugin_linux-amd64.zip",
+        "checksum": "b8f8217f523fbb577498784b49950abe"
       },
       "macos-arm64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.3.3/node-manager-plugin_darwin-arm64.zip",
-        "checksum": "3bcf7d1ef42b4abf8d3aedb26ae58d66"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.0/node-manager-plugin_darwin-arm64.zip",
+        "checksum": "715644bb903d0a10e9fc91f101682f60"
       },
       "macos-amd64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.3.3/node-manager-plugin_darwin-amd64.zip",
-        "checksum": "78b137a21e9c757fcd23dfac4cb5ba9a"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.0/node-manager-plugin_darwin-amd64.zip",
+        "checksum": "3013d1d1b68a7863b5544f7b7553f38c"
       }
     },
-    "version": "0.3.3",
+    "version": "0.4.0",
     "url": "https://github.com/massalabs/node-manager-plugin"
   }
 ]
