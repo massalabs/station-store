@@ -34,23 +34,23 @@
     "description": "Your private access to DeWeb",
     "assets": {
       "windows": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.13/deweb-plugin_windows_amd64.zip",
-        "checksum": "14f49052fcb594d7e1f335755345a969"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.14/deweb-plugin_windows_amd64.zip",
+        "checksum": "8701b0f4eaf11db4f89de6273ce5ade3"
       },
       "linux": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.13/deweb-plugin_linux_amd64.zip",
-        "checksum": "919b0548a51a2b8c028dd7df324dfa28"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.14/deweb-plugin_linux_amd64.zip",
+        "checksum": "3443e2a34130c1b81247753ecf02c721"
       },
       "macos-arm64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.13/deweb-plugin_darwin_arm64.zip",
-        "checksum": "8d3a6844c5e0f81d748ca11a06dd60c1"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.14/deweb-plugin_darwin_arm64.zip",
+        "checksum": "fd1b79d81b4871abaaa0a92f697f3b68"
       },
       "macos-amd64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.13/deweb-plugin_darwin_amd64.zip",
-        "checksum": "633cb6e66c9118cbdee1fd6006367f4a"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.14/deweb-plugin_darwin_amd64.zip",
+        "checksum": "35604f4ea7ca45a86dfa6f94b7bef0b3"
       }
     },
-    "version": "0.4.13",
+    "version": "0.4.14",
     "url": "https://github.com/massalabs/deweb"
   },
   {
