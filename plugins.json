@@ -57,27 +57,27 @@
     "name": "Node Manager",
     "author": "Massa Labs",
     "logo": "logo.svg",
-    "massaStationVersion": ">=0.8.0",
+    "massaStationVersion": ">=0.9.0",
     "description": "Run your local node and start staking",
     "assets": {
       "windows": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.6/node-manager-plugin_windows-amd64.zip",
-        "checksum": "11a51ef4114259a8319ddcfd8b773537"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.7/node-manager-plugin_windows-amd64.zip",
+        "checksum": "1416d1f5100a3df1551b689e1cffe1ff"
       },
       "linux": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.6/node-manager-plugin_linux-amd64.zip",
-        "checksum": "b72aa09e13927d301fbe29ee81f1b2c4"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.7/node-manager-plugin_linux-amd64.zip",
+        "checksum": "8184dbb1bb14045bf14a7d2bab84ac6f"
       },
       "macos-arm64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.6/node-manager-plugin_darwin-arm64.zip",
-        "checksum": "b79521de7d57c1c2c1e8c1934e8e1abe"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.7/node-manager-plugin_darwin-arm64.zip",
+        "checksum": "010833e69a3ee80f9e06e120f4ee9116"
       },
       "macos-amd64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.6/node-manager-plugin_darwin-amd64.zip",
-        "checksum": "5a8b9ec4f812e95776d45455ff8a9ff5"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/node-manager/v0.4.7/node-manager-plugin_darwin-amd64.zip",
+        "checksum": "695986a292e5a4d7910f82496aa9bfbf"
       }
     },
-    "version": "0.4.6",
+    "version": "0.4.7",
     "url": "https://github.com/massalabs/node-manager-plugin"
   }
 ]
