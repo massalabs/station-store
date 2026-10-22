@@ -3,54 +3,54 @@
     "name": "Massa Wallet",
     "author": "Massa Labs",
     "logo": "logo.svg",
-    "massaStationVersion": ">=0.8.0",
+    "massaStationVersion": ">=0.9.0",
     "description": "Massa blockchain official wallet",
     "assets": {
       "windows": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.5.9/wallet-plugin_windows-amd64.zip",
-        "checksum": "edee73d0465cc288999d595ad49d48ef"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.6.0/wallet-plugin_windows-amd64.zip",
+        "checksum": "f3f41414f286a6c4d0e713666547c588"
       },
       "linux": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.5.9/wallet-plugin_linux-amd64.zip",
-        "checksum": "1903a1e04f1c894527f7de59ef65b2c1"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.6.0/wallet-plugin_linux-amd64.zip",
+        "checksum": "0a68780e7228cc175836c1e1f9077b17"
       },
       "macos-arm64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.5.9/wallet-plugin_darwin-arm64.zip",
-        "checksum": "8135a059369561bbf47fface0289645c"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.6.0/wallet-plugin_darwin-arm64.zip",
+        "checksum": "4f376c3bd0f9876c546e3481ef58ba9f"
       },
       "macos-amd64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.5.9/wallet-plugin_darwin-amd64.zip",
-        "checksum": "db3afebddd480fe568cce33cef36d99b"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/wallet/v0.6.0/wallet-plugin_darwin-amd64.zip",
+        "checksum": "02cb1cf85849e1d9f7fcc1df44a2acde"
       }
     },
-    "version": "0.5.9",
+    "version": "0.6.0",
     "url": "https://github.com/massalabs/station-massa-wallet"
   },
   {
     "name": "Local DeWeb Provider",
     "author": "Massa Labs",
     "logo": "favicon.png",
-    "massaStationVersion": ">=0.7.0",
+    "massaStationVersion": ">=0.9.0",
     "description": "Your private access to DeWeb",
     "assets": {
       "windows": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.14/deweb-plugin_windows_amd64.zip",
-        "checksum": "8701b0f4eaf11db4f89de6273ce5ade3"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.15/deweb-plugin_windows_amd64.zip",
+        "checksum": "cd450f274578daf7335a078c7f6dab9c"
       },
       "linux": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.14/deweb-plugin_linux_amd64.zip",
-        "checksum": "3443e2a34130c1b81247753ecf02c721"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.15/deweb-plugin_linux_amd64.zip",
+        "checksum": "4e5cdaa3740f0d2c6c49c0e463726f74"
       },
       "macos-arm64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.14/deweb-plugin_darwin_arm64.zip",
-        "checksum": "fd1b79d81b4871abaaa0a92f697f3b68"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.15/deweb-plugin_darwin_arm64.zip",
+        "checksum": "57da7559d9cb46253fe3b1f9d05c6e2e"
       },
       "macos-amd64": {
-        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.14/deweb-plugin_darwin_amd64.zip",
-        "checksum": "35604f4ea7ca45a86dfa6f94b7bef0b3"
+        "url": "https://massa-station-assets.s3.eu-west-3.amazonaws.com/plugins/deweb/v0.4.15/deweb-plugin_darwin_amd64.zip",
+        "checksum": "bf0fa8fc799f63ed811cedfd30261135"
       }
     },
-    "version": "0.4.14",
+    "version": "0.4.15",
     "url": "https://github.com/massalabs/deweb"
   },
   {
